@@ -22,4 +22,4 @@ PS: A fost o experiență foarte frumoasă să lucrez la acest proiect, mi-am ad
 la olimpiada de TIC și sunt destul de mulțumit și pentru ceea ce am reușit pe partea de back-end, fiind primul meu
 contact cu JavaScript. Cheers!
 
-Link: 
+Link: https://skf12.github.io/LSAC-IT/
