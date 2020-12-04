@@ -1,0 +1,533 @@
+<!--Blotiu Mihnea-Andrei-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ajutor Pentru Programator</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    html {
+      font-size: 100%;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 1rem;
+      }
+    }
+
+    @media (min-width:960px) {
+      body {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (min-width:1100px) {
+      body {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and (max-width: 1060px) {
+      #primary {
+        width: 67%;
+      }
+
+      #secondary {
+        width: 30%;
+        margin-left: 3%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #primary {
+        width: 100%;
+      }
+
+      @media (min-device-width:600px) {
+        img[data-src-600px] {
+          content: attr(data-src-600px, url);
+        }
+      }
+
+      @media (min-device-width:800px) {
+        img[data-src-800px] {
+          content: attr(data-src-800px, url);
+        }
+      }
+
+      #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+      }
+    }
+
+    .animatie1 {
+      position: relative;
+      animation-name: poza1;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+    }
+
+    .animatie2 {
+      position: relative;
+      animation-name: poza2;
+      animation-duration: 4s;
+      animation-iteration-count: 3;
+    }
+
+    @keyframes poza1 {
+      0% {
+   
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        
+        left: 200px;
+        top: 100px;
+      }
+
+      75% {
+        
+        left: 0px;
+        top: 100px;
+      }
+
+      100% {
+    
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    @keyframes poza2 {
+      0% {
+   
+        left: 0px;
+      }
+
+      50% {
+        left: -200px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .fa {
+      padding: 4px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 5px;
+      border-radius: 20%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .header {
+      position: fixed;
+      width: 100%;
+      height: 50%;
+      left: 5px;
+      background-color: white;
+    }
+
+    .login-button {
+      position: relative;
+      background: #263238;
+      border-radius: 5px;
+      color: #92E3A9;
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      white-space: normal;
+    }
+
+    .creare-cont-button {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #263238;
+    }
+
+    #text1 {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 121.1%;
+      color: #263238;
+    }
+
+    #text2 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #263238;
+    }
+
+    #popup-button {
+      background: #263238;
+      border-radius: 5px;
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      color: #92E3A9;
+      margin-left: 15px;
+    }
+
+    #popup-button2 {
+      background: #92E3A9;
+      border-radius: 5px;
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      color: #263238;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+
+    #middle {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 121.1%;
+      text-align: center;
+      color: #263238;
+    }
+
+    .tabel {
+      position: relative;
+      top: -40%;
+      left: 25%;
+      margin-right: 40%;
+    }
+
+    #text-tabel {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 20px;
+      color: #263238;
+    }
+
+    #formular {
+      text-align: center;
+      margin-left: 55%;
+      margin-right: 10%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .formulardiv {
+      position: relative;
+      display: block;
+      top: 50px;
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      color: #263238;
+    }
+
+    .textformular {
+      position: absolute;
+      left: 5%;
+      top: 20%;
+      right: 50%;
+      bottom: 5%;
+      height: 100%;
+    }
+
+    #text-formular1 {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 121.1%;
+      color: #263238;
+    }
+
+    #text-formular2 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 121.1%;
+      color: #263238;
+    }
+
+    .subsol {
+      display: block;
+      position: fixed;
+      top: 93%;
+      width: 100%;
+      height: 10%;
+      left: 0%;
+      text-align: center;
+      background-color: #263238;
+      padding-bottom: 20px;
+      margin-bottom: 5%;
+    }
+
+    #final {
+      font-family: Merriweather;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 121.1%;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+      margin-bottom: 5%;
+    }
+
+    .afisare {
+      position: absolute;
+      display: block;
+      text-align: left;
+      top: 108%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 22px;
+      color: #263238;
+    }
+  </style>
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+
+    function showInput() {
+      document.getElementById('display').innerHTML =
+        document.getElementById("usr").value;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron" style="background-color:white;">
+      <img src="Asset 1 1.png" class="img-fluid float-left animatie1" style="padding-left:5%;">
+      <div class="btn-group float-right" style="padding-right:10%;">
+        <button type="button" class="btn btn-dark login-button">Logare</button>
+        <button type="button" class="btn creare-cont-button">Creare Cont</button>
+        <button type="button" class="btn creare-cont-button">Contact</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6" style="margin-top:5%; padding-left:7%">
+        <p id="text1">Cumpăratul de teme nu a <br> fost niciodată mai simplu!</p>
+        <br>
+        <p id="text2">Platforma ideala pentru studenții de la Politehnică cu portofele pline, care au <br> nevoie urgent
+          de un înger care să le repare nota de intrare în examen.</p>
+        <br>
+        <button type="button" class="btn btn-dark" id="popup-button" data-toggle="modal" data-target="#myModal">
+          Vreau să cumpăr
+        </button>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color:#92E3A9;">
+                <h4 class="modal-title">Exprimă-ți frustrările</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <form action="/action_page.php" style="text-align:center;">
+                  <div class="form-group">
+                    <select name="materii" class="custom-select mb-3" id="materii">
+                      <script>
+                        function add_option(select_id, text) {
+                          var select = document.getElementById(select_id);
+                          select.options[select.options.length] = new Option(text);
+                        }
+                        function clear_combo(select_id) {
+                          var select = document.getElementById(select_id);
+                          select.options.length = 0;
+                        }
+                        function load_combo(select_id, option_array) {
+                          for (var i = 0; i < option_array.length; i++) {
+                            add_option(select_id, option_array[i]);
+                          }
+                        }
+                        var materii = new Array("PC", "USO", "Mate1", "Mate2",
+                          "Engleză", "Grafică", "PL");
+                        load_combo("materii", materii);
+                      </script>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Titlul Proiectului" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Vă rugăm completați această zonă.</div>
+                  </div>
+                  <input type="button" value="Încarcă" id="popup-button" onclick="showInput();">
+                  <div class="modal-header" style="background-color:#92E3A9; margin-top:20px;">
+                    <h4 class="modal-title">Plângeri introduse până acum.</h4>
+                    <p id="display" class="afisare"></p>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-dark" id="popup-button2">
+          Vreau să fac teme pentru alții
+        </button>
+      </div>
+      <div class="col-sm-6" style="padding-right:10%;">
+        <img src="Group 1.png" class="img-fluid float-right animatie2">
+      </div>
+    </div>
+    <div class="row" style="background-color:#92E3A9; padding-top:30px;">
+      <div class="col-sm-12" id="middle">
+        <p>Cum funcționează?</p>
+      </div>
+    </div>
+    <div class="row" style="background-color:#92E3A9; padding-top:80px;">
+      <div class="col-sm-4" style="background-color:#92E3A9;">
+        <img src="1.png" class="img-fluid, rounded" style="background-color:black;">
+        <div class="row, tabel">
+          <p id="text-tabel">Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți
+            griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p>
+        </div>
+      </div>
+      <div class="col-sm-4" style="background-color:#92E3A9;">
+        <img src="2.png" class="img-fluid, rounded" style="background-color:black;">
+        <div class="row, tabel">
+          <p id="text-tabel">Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te
+            rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p>
+        </div>
+      </div>
+      <div class="col-sm-4" style="background-color:#92E3A9;">
+        <img src="3.png" class="img-fluid, rounded" style="background-color:black;">
+        <div class="row, tabel">
+          <p id="text-tabel">După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte
+            universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în
+            avans, restul după ce vă vedeți intrat în examen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row formulardiv">
+      <div class="col-sm-6" style="margin:auto; box-shadow:10px 5px 10px 5px; border-radius:20px;">
+        <form action="mailto:mihnea.blotiu@cnmv.ro" method="post" enctype="text/plain" class="needs-validation"
+          id="formular" novalidate>
+          <div class="form-group">
+            <label for="uname">Nume:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Scrieți numele" name="uname"
+              style="border: 2px solid #263238; box-sizing: border-box; border-radius: 10px;" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Vă rugăm completați această zonă.</div>
+          </div>
+          <div class="form-group">
+            <label for="e-mail">Email:</label>
+            <input type="email" class="form-control" id="e-mail" placeholder="Scrieți adresa de e-mail" name="e-mail"
+              style="border: 2px solid #263238; box-sizing: border-box; border-radius: 10px;" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Vă rugăm completați această zonă.</div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Înjurătură</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              style="border: 2px solid #263238; box-sizing: border-box; border-radius: 10px;" required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Vă rugăm completați această zonă.</div>
+          </div>
+          <button type="submit" class="btn btn-dark" id="popup-button" style="">Trimiteți</button>
+        </form>
+        <div class="textformular">
+          <p id="text-formular1">Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</p>
+          <p id="text-formular2">Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12, subsol">
+        <a href="https://mobile.twitter.com/?lang=ro" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/" class="fa fa-twitter"></a>
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <marquee id="final" scrollamount="20">Copyright 2020 | Cine ne părăsește o mierlește </marquee>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
